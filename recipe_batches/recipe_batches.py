@@ -7,7 +7,6 @@ def recipe_batches(recipe, ingredients):
     min_batch = None
     for ingredient in recipe:
         if ingredient in ingredients:
-            # print(ingredients[ingredient], recipe[ingredient])
             batches = ingredients[ingredient] // recipe[ingredient]
             if min_batch is None:
                 min_batch = batches
